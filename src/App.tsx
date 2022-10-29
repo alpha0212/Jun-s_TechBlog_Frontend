@@ -1,15 +1,23 @@
 import React from "react";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import { Navbar } from "src/components";
+import { Route, Routes } from "react-router-dom";
+import { Post, Navbar } from "src/components";
+import { AuthPage } from "./pages/auth";
 
 export const App: React.FC = () => {
   /**
    * 조건문으로 메인에서 Navbar
    */
+
   return (
     <>
       <Navbar />
-      <Routes></Routes>
+      <div style={{ paddingBottom: "13rem" }}></div>
+      <Routes>
+        <Route path="auth">
+          <Route path="login" element={<AuthPage />} />
+        </Route>
+        <Route path="post" element={<Post />} />
+      </Routes>
     </>
   );
 };
