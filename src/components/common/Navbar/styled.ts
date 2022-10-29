@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const NavbarContainer = styled.div`
   width: 100%;
   padding-top: 2rem;
-  background-color: #121212;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.27);
 `;
 
 export const NavbarObjectNavbar = styled.div`
@@ -52,4 +52,17 @@ export const AuthPage = styled(Link)`
   float: right;
   color: #dbdbdb;
   text-decoration: none;
+`;
+
+export const Logout = styled.div`
+  float: right;
+  color: #dbdbdb;
+  user-select: none;
+`;
+
+export const GoToPost = styled(Link)`
+  float: right;
+  text-decoration: none;
+  color: #dbdbdb;
+  margin-right: 3rem;
 `;
