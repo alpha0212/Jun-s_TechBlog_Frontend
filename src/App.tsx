@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { Post, Navbar } from "src/components";
-import { AuthPage } from "./pages/auth";
+import { Navbar } from "src/components";
+import { MainPage } from "./pages";
 
 export const App: React.FC = () => {
   /**
@@ -13,10 +13,7 @@ export const App: React.FC = () => {
       <Navbar />
       <div style={{ paddingBottom: "13rem" }}></div>
       <Routes>
-        <Route path="auth">
-          <Route path="login" element={<AuthPage />} />
-        </Route>
-        <Route path="post" element={<Post />} />
+        <Route index element={<MainPage />} />
       </Routes>
     </>
   );

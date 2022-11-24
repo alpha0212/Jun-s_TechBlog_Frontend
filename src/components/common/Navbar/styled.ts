@@ -15,7 +15,7 @@ export const NavbarObjectNavbar = styled.div`
 `;
 
 export const NavbarLogoContainer = styled(Link)`
-  width: 4%;
+  width: 4rem;
   padding-bottom: 2rem;
   text-decoration: none;
   color: black;
@@ -34,7 +34,7 @@ export const NavbarLogo = styled.div`
 `;
 
 export const NavbarLogoText = styled(Link)`
-  width: 30%;
+  width: 60%;
   font-size: 3rem;
   font-weight: 600;
   color: #dbdbdb;
