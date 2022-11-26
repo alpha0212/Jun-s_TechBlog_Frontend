@@ -1,10 +1,10 @@
 import React from "react";
-import { IntroMysql } from "src/components";
+import { IntroMyself } from "src/components";
 
 export const MainPage: React.FC = () => {
   return (
     <>
-      <IntroMysql />
+      <IntroMyself />
     </>
   );
 };

@@ -25,11 +25,15 @@ export const globalStyle = css`
     --price-level-5: #e9b738;
     --color-flex: var(--price-level-5);
   }
-
+  @font-face {
+    font-family: "InfinitySans-RegularA1";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
   * {
-    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
-      Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
-      "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-family: "InfinitySans-RegularA1";
   }
 
   html {
@@ -39,7 +43,8 @@ export const globalStyle = css`
   body {
     font-size: 1.6rem;
     font-weight: 400;
-    font-family: Pretendard;
+    font-family: "InfinitySans-RegularA1";
+
     letter-spacing: -0.05rem;
     color: var(--color-text-primary);
     background-color: var(--color-background);

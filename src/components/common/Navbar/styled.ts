@@ -3,66 +3,28 @@ import { Link } from "react-router-dom";
 
 export const NavbarContainer = styled.div`
   width: 100%;
-  padding-top: 2rem;
+  padding-top: 6rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.27);
+  background: #1e1e1e;
 `;
 
-export const NavbarObjectNavbar = styled.div`
-  width: 85%;
-  height: 100%;
-  margin: auto;
-  display: flex;
-`;
-
-export const NavbarLogoContainer = styled(Link)`
-  width: 4rem;
-  padding-bottom: 2rem;
-  text-decoration: none;
-  color: black;
-  float: left;
-`;
-
-export const NavbarLogo = styled.div`
+export const IntroContainer = styled.div`
   width: 100%;
-  border-radius: 1.5rem;
-  background-color: #dbdbdb;
+  padding-bottom: 7rem;
+`;
+
+export const IntroMyName = styled.div`
+  font-size: 3.2rem;
   text-align: center;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
-  font-size: 3rem;
-  font-weight: bold;
-`;
-
-export const NavbarLogoText = styled(Link)`
-  width: 60%;
-  font-size: 3rem;
-  font-weight: 600;
-  color: #dbdbdb;
-  text-decoration: none;
-  line-height: 3.7rem;
-  margin-left: 0.5rem;
-`;
-
-export const AuthPageContainer = styled.div`
-  padding-top: 1.3rem;
-  width: 100%;
-`;
-
-export const AuthPage = styled(Link)`
-  float: right;
-  color: #dbdbdb;
-  text-decoration: none;
-`;
-
-export const Logout = styled.div`
-  float: right;
-  color: #dbdbdb;
-  user-select: none;
-`;
-
-export const GoToPost = styled(Link)`
-  float: right;
-  text-decoration: none;
-  color: #dbdbdb;
-  margin-right: 3rem;
+  color: rgba(255, 255, 255, 0.9);
+  animation: fadein 2.5s;
+  letter-spacing: 1px;
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 `;
